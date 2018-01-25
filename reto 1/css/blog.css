@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+/* body{
+    background-color: #EFEFEF;
+} */
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.header {
+  background: #273B47;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+.menu, .menu button {
+  display: flex;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  padding: 0 10px;
+  list-style: none;
+}
+.menu ul li  {
+  border-top: 5px solid transparent;
+}
+.menu ul .active{
+    border-top: 5px solid #7fc719;
+}
+.menu ul li:hover {
+  border-top: 5px solid #d03333;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 0 7px;
+}
+.menu li {
+  margin: 10px;
+}
+.menu li::after {
+  content: "|";
+  color: white;
+}
+.menu ul li:last-child:after{
+    display: none;
+}
+.menu button{
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #7fc719;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    border-bottom: 3px solid #40882e;
+    cursor: pointer;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.menu button:active {
+  transform: scale(.7);
+}
+.buscador {
+  display: flex;
+  justify-content: flex-end;
+}
+.icono {
+  background-image: url('imagenes/lupa.jpg');
+}
+.buscador label{
+  display: flex;
+}
+.buscador input {
+  border: none;
+}
+.portada {
+  background-image: url('../imagenes/prin-blog.jpg');
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  border: none;
+}
+.etiqueta{
+  background-color: rgba(236, 234, 234, 0.7);
+  width: 500px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.etiqueta:hover {
+  background-color: black;
+  transition: 2s;
+}
+.etiqueta h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  color: #6a6a6a;
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+  border-bottom-color: #9c9999cf;
+}
+.publicacion {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: #6a6a6a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.autor {
+  display: flex;
+  align-items: center;
+}
+.autor img {
+  padding-right: 5px;
+}
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+.articulo {
+    font-family: 'Ubuntu', sans-serif;
+    color: #6a6a6a;
+    text-decoration: none;
+}
+.articulo h3 {
+  padding: 13px 0;
+}
+.articulo .publicacion{
+  border-top: 1px solid;
+  border-top-color: #9c9999cf;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #6a6a6a;
+  margin-top: 42px;
+  margin-bottom: 20px;
+}
+.pagination a{
+  background: #c5c0c0a3;
+  border: none;
+  padding: 0 5px;
+  text-decoration: none;
+  margin-left: 5px;
+  color: #6a6a6a;
+}
+.pagination .active {
+  background: none;
+}

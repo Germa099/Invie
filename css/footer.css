@@ -1,0 +1,24 @@
+body {
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  min-height: 200vh;
+}
+header {
+  height: 50px;
+  background: #0791E6;
+  flex: 1;
+}
+section {
+  background: #1C3643;
+  color: white;
+
+}
+footer {
+  background: #00A767;
+  height: 100px;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}

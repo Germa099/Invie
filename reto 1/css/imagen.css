@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+}
+.reposo {
+    width: 200px;
+    background: black;
+    color: white;
+    border: 3px solid red;
+    display: flex;
+    align-items: center;
+    font-size: 19px
+}
+.area {
+  background-image: url('../images/mkt-musicos.jpg');
+  background-size: cover;
+  /* border: 3px solid green; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+}
+.area:hover {
+  background-image: url('../images/mkt-musicos.jpg');
+  background-size: 110%;
+}
+.contenido {
+  height: 225px;
+  width: 225px;
+  background-color: white;
+  color: black;
+  /* overflow: hidden; */
+  border: 2px solid green;
+  transition: 1s;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.contenido p {
+  visibility: hidden;
+  position: absolute;
+  /* opacity: 0; */
+  /* transition: 1s; */
+}
+.area:hover .contenido {
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+  /* transform: rotateX(180); */
+  transform: rotate(360deg);
+  border-radius: 15px;
+  height: 251px;
+
+}
+.area .contenido img {
+  transition: 1s
+}
+.area:hover .contenido img {
+  opacity: 0;
+  /* display: none; */
+}
+.area:hover .contenido p {
+  visibility: visible;
+}

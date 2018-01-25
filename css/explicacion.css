@@ -1,0 +1,50 @@
+/* tipo de selector {
+  propíedad: valor;
+} */
+
+/* selector universal */
+* {
+  border: 1px solid red;
+  margin: 10px;
+}
+/* selector de etiqueta */
+header {
+  background-image: url("../images/background.png");
+  background-position: adjust;
+
+}
+
+section {
+  background: purple;
+}
+
+/* selector decendente */
+article h3 {
+  color: blue;
+}
+
+/* selectores de clase */
+.title-a {
+  background: yellow;
+}
+
+.title-b {
+  background: salmon;
+}
+
+/* selector de id */
+#header {
+    border: 3px solid black;
+}
+
+#portada {
+  border: 3px solid orange;
+}
+
+#seccion2 {
+  border: 3px solid blue;
+  background-color: brown;
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-size: cover;
+}

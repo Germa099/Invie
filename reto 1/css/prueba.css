@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  /* border: 2px solid red;
+  padding: 10px;
+  margin: 10px; */
+}
+.contenedor {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.header {
+  background: #273B47;
+}
+
+.logotipo {
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  top: 2px;
+}
+.menu {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+.menu ul {
+  display: inline-block;
+  margin-top: 8px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li::after {
+  content: "|";
+  color: white;
+  margin: 12px;
+}
+.iniciarsesion {
+    position: absolute;
+    right: 32px;
+    top: 9px;
+    color: white;
+    border-radius: 4px;
+    background: #FF4842;
+    width: 107px;
+    height: 23px;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+    border-bottom-style: ridge;
+    border-bottom-color: #D0272A;
+}
+.buscador {
+  position: absolute;
+  right: 0;
+}
+.menu ul li:last-child:after{
+    display: none;
